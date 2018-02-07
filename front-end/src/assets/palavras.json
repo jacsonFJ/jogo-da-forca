@@ -1,0 +1,29 @@
+{
+    "palavras": [
+        {
+            "palavra": "MOTORISTA",
+            "letras": ["M", "O", "T", "O", "R", "I", "S", "T", "A"],
+            "dicas": ["Sua profissão é dirigir"]
+        },
+        {
+            "palavra": "BERINGELA",
+            "letras": ["B", "E", "R", "I", "N", "G", "E", "L", "A"],
+            "dicas": ["É um alimento", "É um vegetal", "É um legume"]
+        },
+        {
+            "palavra": "CATARATA",
+            "letras": ["C", "A", "T", "A", "R", "A", "T", "A"],
+            "dicas": ["Queda d'água"]
+        },
+        {
+            "palavra": "ENERGÉTICO",
+            "letras": ["E", "N", "E", "R", "G", "E", "T", "I", "C", "O"],
+            "dicas": ["Bebida gasosa", "Normalmente é consumida gelada"]
+        },
+        {
+            "palavra": "TÉDIO",
+            "letras": ["T", "E", "D", "I", "O"],
+            "dicas": ["Estado emocional", "Aflinge pessoas desocupadas"]
+        }
+    ]
+}
