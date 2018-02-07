@@ -45,7 +45,11 @@ export class AppComponent {
 
     let botoes: HTMLCollectionOf<Element> = document.getElementsByClassName('letra-btn');
     if(this.palavra.letras.indexOf(event.target.innerText) != -1){
-      this.acertos.push(event.target.innerText);
+      for(let letra of this.palavra.letras){
+        if(letra == event.target.innerText){
+          this.acertos.push(letra);
+        }
+      }
       if(this.acertos.length == this.palavra.letras.length){
         for(let i=0; i < botoes.length; i++){
           botoes[i].setAttribute('disabled', '');
