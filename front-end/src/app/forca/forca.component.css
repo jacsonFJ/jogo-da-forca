@@ -1,0 +1,21 @@
+figure{
+    align-items: baseline !important;
+    justify-content: flex-end;
+}
+mat-list{
+    border: 1px solid #e0e0e0;
+    min-width: 200px;
+}
+.letra{
+    font-size: 1.8rem;
+    border: 1px solid #e0e0e0;
+    margin: 0px 5px;
+    padding: 5px;
+    height: 20px;
+    width: 20px;
+    text-align: center;
+}
+mat-grid-tile button{
+    font-size: 1.5rem;
+    margin: 0px 5px;
+}

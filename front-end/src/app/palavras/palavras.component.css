@@ -1,0 +1,10 @@
+.tab-container {
+  display: flex;
+  flex-direction: column;
+  max-height: 500px;
+  min-width: 600px;
+  position: relative;
+}
+#tb-palavras{
+  height: 500px;
+}

@@ -1,0 +1,26 @@
+<mat-grid-list [cols]="1" [rowHeight]="100">
+  <mat-grid-tile class="container" [colspan]="1" [rowspan]="1">
+    <button mat-raised-button color="primary" (click)="odPalavra()">
+      <mat-icon>add</mat-icon>
+      {{ stringBtn }}
+    </button>
+    <span class="spacer"></span>
+  </mat-grid-tile>
+  <mat-grid-tile [colspan]="1" [rowspan]="5">
+    <div class="tab-container mat-elevation-z8">
+      <mat-table id="tb-palavras" [dataSource]="dsPalavras" matSort>
+        <ng-container matColumnDef="_id">
+          <mat-header-cell *matHeaderCellDef mat-sort-header>Código</mat-header-cell>
+          <mat-cell *matCellDef="let p"> {{ p._id }} </mat-cell>
+        </ng-container>
+        <ng-container matColumnDef="palavra">
+          <mat-header-cell *matHeaderCellDef mat-sort-header>Palavra</mat-header-cell>
+          <mat-cell *matCellDef="let p"> {{ p.palavra }} </mat-cell>
+        </ng-container>
+        <mat-header-row *matHeaderRowDef="colunas"></mat-header-row>
+        <mat-row *matRowDef="let row; columns: colunas"></mat-row>
+      </mat-table>
+      <mat-paginator [pageSize]="10" [pageSizeOptions]="[10, 25, 50]"></mat-paginator>
+    </div>
+  </mat-grid-tile>
+</mat-grid-list>

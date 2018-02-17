@@ -1,0 +1,10 @@
+<h1 mat-dialog-title>Caixa de Dialogo</h1>
+<div mat-dialog-content>
+  <mat-form-field>
+    <input placeholder="Escreva algo" matInput [(ngModel)]="data.pal" cdkFocusInitial>
+  </mat-form-field>
+</div>
+<div mat-dialog-actions>
+  <button mat-button mat-dialog-close>Cancelar</button>
+  <button mat-button [mat-dialog-close]="data.pal">Confirmar</button>
+</div>

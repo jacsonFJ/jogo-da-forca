@@ -1,0 +1,55 @@
+<mat-grid-list cols="2" rowHeight="389px">
+  <mat-grid-tile>
+    <mat-list class="mat-elevation-z4">
+      <h3 matSubheader>Dicas</h3>
+      <mat-divider></mat-divider>
+      <mat-list-item *ngFor="let dica of palavra.dicas">
+        {{ dica }}
+        <mat-divider></mat-divider>
+      </mat-list-item>
+    </mat-list>
+  </mat-grid-tile>
+  <mat-grid-tile>
+    <img class="mat-elevation-z4" src="assets/forca{{ i }}.jpg" alt="imagem forca" />
+  </mat-grid-tile>
+</mat-grid-list>
+<mat-grid-list cols="2" rowHeight="70px">
+  <mat-grid-tile></mat-grid-tile>
+  <mat-grid-tile>
+    <span class="letra mat-elevation-z4" *ngFor="let l of palavra.letras" id="letra{{ l }}">
+      <span *ngIf="acertos.indexOf(l) != -1">{{ l }}</span>
+    </span>
+  </mat-grid-tile>
+</mat-grid-list>
+<mat-grid-list cols="1" rowHeight="70px">
+  <mat-grid-tile>
+    <button class="letra-btn" mat-fab color="primary" (click)="letraClick($event)">A</button>
+    <button class="letra-btn" mat-fab color="primary" (click)="letraClick($event)">B</button>
+    <button class="letra-btn" mat-fab color="primary" (click)="letraClick($event)">C</button>
+    <button class="letra-btn" mat-fab color="primary" (click)="letraClick($event)">D</button>
+    <button class="letra-btn" mat-fab color="primary" (click)="letraClick($event)">E</button>
+    <button class="letra-btn" mat-fab color="primary" (click)="letraClick($event)">F</button>
+    <button class="letra-btn" mat-fab color="primary" (click)="letraClick($event)">G</button>
+    <button class="letra-btn" mat-fab color="primary" (click)="letraClick($event)">H</button>
+    <button class="letra-btn" mat-fab color="primary" (click)="letraClick($event)">I</button>
+    <button class="letra-btn" mat-fab color="primary" (click)="letraClick($event)">J</button>
+    <button class="letra-btn" mat-fab color="primary" (click)="letraClick($event)">K</button>
+    <button class="letra-btn" mat-fab color="primary" (click)="letraClick($event)">L</button>
+    <button class="letra-btn" mat-fab color="primary" (click)="letraClick($event)">M</button>
+  </mat-grid-tile>
+  <mat-grid-tile>
+    <button class="letra-btn" mat-fab color="primary" (click)="letraClick($event)">N</button>
+    <button class="letra-btn" mat-fab color="primary" (click)="letraClick($event)">O</button>
+    <button class="letra-btn" mat-fab color="primary" (click)="letraClick($event)">P</button>
+    <button class="letra-btn" mat-fab color="primary" (click)="letraClick($event)">Q</button>
+    <button class="letra-btn" mat-fab color="primary" (click)="letraClick($event)">R</button>
+    <button class="letra-btn" mat-fab color="primary" (click)="letraClick($event)">S</button>
+    <button class="letra-btn" mat-fab color="primary" (click)="letraClick($event)">T</button>
+    <button class="letra-btn" mat-fab color="primary" (click)="letraClick($event)">U</button>
+    <button class="letra-btn" mat-fab color="primary" (click)="letraClick($event)">V</button>
+    <button class="letra-btn" mat-fab color="primary" (click)="letraClick($event)">W</button>
+    <button class="letra-btn" mat-fab color="primary" (click)="letraClick($event)">X</button>
+    <button class="letra-btn" mat-fab color="primary" (click)="letraClick($event)">Y</button>
+    <button class="letra-btn" mat-fab color="primary" (click)="letraClick($event)">Z</button>
+  </mat-grid-tile>
+</mat-grid-list>
